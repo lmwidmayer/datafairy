@@ -1,0 +1,20 @@
+Package: datafairy
+Title: Manage data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Lisa", family = "Widmayer", 
+           email = "lisa.widmayer@uni-marburg.de", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = ""))
+URL: https://github.com/lmwidmayer/datafairy
+BugReports: https://github.com/lmwidmayer/datafairy/issues
+Description: The datafairy provides minimalistic functions to manage and handle data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
