@@ -1,6 +1,6 @@
 Package: datafairy
-Title: Datafairy: A tiny data handling assistant
-Version: 0.0.1
+Title: datafairy: A tiny data handling assistant
+Version: 0.0.0.9000
 Authors@R: 
     person(given = "Lisa", family = "Widmayer", 
            email = "lisa.widmayer@uni-marburg.de", 
