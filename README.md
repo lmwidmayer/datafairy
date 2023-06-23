@@ -4,6 +4,8 @@
 # datafairy
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/lmwidmayer/datafairy/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lmwidmayer/datafairy/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 <img src="man/figures/logo.svg" align="right" height="139" />
@@ -66,7 +68,8 @@ which you can describe to which data set this codebook belongs.
 ``` r
 citation("datafairy")
 #> 
-#> Widmayer L (2023). _datafairy: A tiny data handling assistant_. <URL:
+#> Widmayer L (2023). _datafairy: A tiny data handling assistant_. R
+#> package version 0.0.0.9000, <URL:
 #> https://github.com/lmwidmayer/datafairy>.
 #> 
 #> Ein BibTeX-Eintrag für LaTeX-Benutzer ist
@@ -76,5 +79,6 @@ citation("datafairy")
 #>     author = {Lisa Widmayer},
 #>     year = {2023},
 #>     url = {https://github.com/lmwidmayer/datafairy},
+#>     note = {R package version 0.0.0.9000},
 #>   }
 ```
