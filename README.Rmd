@@ -62,3 +62,8 @@ Note that `content.type = TRUE` adds a row with the name `CONTENT` in which you 
 
 <!-- devtools::build_readme() -->
 
+## Citation
+
+```{r}
+citation("datafairy")
+```

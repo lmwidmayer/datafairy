@@ -1,9 +1,8 @@
-bibentry(bibtype = "software",
-         title = "datafairy: A tiny data handling assistant",
+note <- sprintf("R package version %s", meta$Version)
+
+bibentry(bibtype = "manual",
+         title = "Datafairy: A tiny data handling assistant",
          author = c(person("Lisa", "Widmayer")),
-         journal = "",
-         number = "",
-         pages = "",
          year = 2023,
-         doi = "",
-         url = "https://github.com/lmwidmayer/datafairy")
+         url = "https://github.com/lmwidmayer/datafairy",
+         note = note)

@@ -60,3 +60,21 @@ Note that `content.type = TRUE` adds a row with the name `CONTENT` in
 which you can describe to which data set this codebook belongs.
 
 <!-- devtools::build_readme() -->
+
+## Citation
+
+``` r
+citation("datafairy")
+#> 
+#> Widmayer L (2023). _datafairy: A tiny data handling assistant_. <URL:
+#> https://github.com/lmwidmayer/datafairy>.
+#> 
+#> Ein BibTeX-Eintrag für LaTeX-Benutzer ist
+#> 
+#>   @Manual{,
+#>     title = {datafairy: A tiny data handling assistant},
+#>     author = {Lisa Widmayer},
+#>     year = {2023},
+#>     url = {https://github.com/lmwidmayer/datafairy},
+#>   }
+```
