@@ -50,20 +50,20 @@ usethis::use_data(trtctrl_df, overwrite = TRUE)
 
 # nested list
 
-p1 <- makeExample_lst(
-  id = 1,
-  date = "2023-06-22",
-  session_tasks = c("CBT", "VSPT"),
-  session_questionnaire = c("NFC")
-)
-p2 <- makeExample_lst(
-  id = 2,
-  date = "2023-05-20",
-  session_tasks = c("CBT"),
-  session_questionnaire = c("NFC")
-)
-p_lst <- list(
-  "p1" = p1,
-  "p2" = p2
-)
-usethis::use_data(p_lst, overwrite = TRUE)
+# p1 <- makeExample_lst(
+#   id = 1,
+#   date = "2023-06-22",
+#   session_tasks = c("CBT", "VSPT"),
+#   session_questionnaire = c("NFC")
+# )
+# p2 <- makeExample_lst(
+#   id = 2,
+#   date = "2023-05-20",
+#   session_tasks = c("CBT"),
+#   session_questionnaire = c("NFC")
+# )
+# p_lst <- list(
+#   "p1" = p1,
+#   "p2" = p2
+# )
+# usethis::use_data(p_lst, overwrite = TRUE)
