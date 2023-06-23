@@ -1,5 +1,5 @@
 Package: datafairy
-Title: Manage data
+Title: datafairy: A tiny data handling assistant
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Lisa", family = "Widmayer", 

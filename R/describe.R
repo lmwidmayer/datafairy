@@ -24,17 +24,23 @@ describe <- function(vec, na.rm = FALSE) {
 
 #' @export
 describe.numeric <- function(vec, na.rm = FALSE) {
-  res <- c(min(vec, na.rm = na.rm),
-           stats::median(vec, na.rm = na.rm),
-           max(vec, na.rm = na.rm),
-           mean(vec, na.rm = na.rm),
-           stats::sd(vec, na.rm = na.rm),
-           length(vec),
-           sum(is.na(vec)))
-  res <- data.frame("Metric" = c("Min", "Median", "Max",
-                                 "Mean", "SD",
-                                 "N", "NA"),
-                    "Value" = res)
+  res <- c(
+    min(vec, na.rm = na.rm),
+    stats::median(vec, na.rm = na.rm),
+    max(vec, na.rm = na.rm),
+    mean(vec, na.rm = na.rm),
+    stats::sd(vec, na.rm = na.rm),
+    length(vec),
+    sum(is.na(vec))
+  )
+  res <- data.frame(
+    "Metric" = c(
+      "Min", "Median", "Max",
+      "Mean", "SD",
+      "N", "NA"
+    ),
+    "Value" = res
+  )
   return(res)
 }
 
@@ -44,13 +50,19 @@ describe.numeric <- function(vec, na.rm = FALSE) {
 describe.factor <- function(vec, na.rm = FALSE) {
   res <- table(vec, useNA = "always")
   res_names <- names(res)
-  res <- data.frame("Type" = res_names,
-                    "Count" = as.vector(res),
-                    "Freq" = as.vector(res) / sum(as.vector(res)))
-  res <- rbind(res,
-               cbind("Type" = "Total",
-                     "Count" = length(vec),
-                     "Freq" = 1))
+  res <- data.frame(
+    "Type" = res_names,
+    "Count" = as.vector(res),
+    "Freq" = as.vector(res) / sum(as.vector(res))
+  )
+  res <- rbind(
+    res,
+    cbind(
+      "Type" = "Total",
+      "Count" = length(vec),
+      "Freq" = 1
+    )
+  )
   return(res)
 }
 
