@@ -18,14 +18,12 @@ knitr::opts_chunk$set(
 library(datafairy)
 ```
 
-## Codebook example
+## Example for mini_cb()
 
-This is example shows how to make a codebook template from a flat dataframe:
+This example shows how to make a codebook template from a flat dataframe:
 
 ```{r example}
-library(datafairy)
-
-## create a codebook
+## create a dummy dataframe
 df <- data.frame(
   id = 1:4,
   condition = factor(LETTERS[1:4]),
@@ -45,3 +43,20 @@ Write the codebook `cb` to a tabular file format or `json` and populate it with 
 - `ANNOTATION`: Further comments on the variable.
 
 Note that `content.type = TRUE` adds a row with the name `CONTENT` in which you can describe to which data set this codebook belongs.  
+
+
+## Example for describe()
+
+Using the dummy dataframe from the previous section, this example shows how to describe data vectors.  
+
+```{r}
+# use dummy dataframe from previous example
+tab.condition <- describe(df$condition)
+print(tab.condition)
+```
+
+```{r}
+# use dummy dataframe from previous example
+tab.score <- describe(df$score, na.rm = TRUE)
+print(tab.score)
+```

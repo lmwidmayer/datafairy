@@ -10,8 +10,8 @@
 
 <img src="man/figures/logo.svg" align="right" height="139" />
 
-The datafairy is grants you basic data handling wishes: The packages
-includes helper functions for creating minimaistic codebooks or
+The datafairy grants you basic data handling wishes: The packages
+includes helper functions for creating minimalist codebooks or
 describing numeric and factor data.
 
 ## Installation
@@ -69,7 +69,7 @@ which you can describe to which data set this codebook belongs.
 citation("datafairy")
 #> 
 #> Widmayer L (2023). _datafairy: A tiny data handling assistant_. R
-#> package version 0.0.0.9000, <URL:
+#> package version 0.0.0.9001, <URL:
 #> https://github.com/lmwidmayer/datafairy>.
 #> 
 #> Ein BibTeX-Eintrag für LaTeX-Benutzer ist
@@ -79,6 +79,6 @@ citation("datafairy")
 #>     author = {Lisa Widmayer},
 #>     year = {2023},
 #>     url = {https://github.com/lmwidmayer/datafairy},
-#>     note = {R package version 0.0.0.9000},
+#>     note = {R package version 0.0.0.9001},
 #>   }
 ```

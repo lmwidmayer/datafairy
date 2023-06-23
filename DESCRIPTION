@@ -1,6 +1,6 @@
 Package: datafairy
 Title: datafairy: A tiny data handling assistant
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Lisa", family = "Widmayer", 
            email = "lisa.widmayer@uni-marburg.de", 
@@ -8,7 +8,7 @@ Authors@R:
            comment = c(ORCID = ""))
 URL: https://github.com/lmwidmayer/datafairy
 BugReports: https://github.com/lmwidmayer/datafairy/issues
-Description: The fairy provides minimalistic functions to manage and handle data: She helps you create a codebook for your data from a given dataframe.
+Description: The fairy provides minimalist functions to manage and handle data: She helps you create a codebook for your data from a given dataframe.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

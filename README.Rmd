@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 <img src="man/figures/logo.svg" align="right" height="139" />
 
-The datafairy is grants you basic data handling wishes: The packages includes helper functions for creating minimaistic codebooks or describing numeric and factor data.  
+The datafairy grants you basic data handling wishes: The packages includes helper functions for creating minimalist codebooks or describing numeric and factor data.  
 
 
 ## Installation
