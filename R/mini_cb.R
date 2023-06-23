@@ -38,7 +38,7 @@ mini_cb <- function(df, auto.type = TRUE, content.type = FALSE) {
     ANNOTATION = ""
   )
   if (auto.type) {
-    cb$TYPE <- lapply(df, class)
+    cb$TYPE <- unlist(lapply(df, class))
   }
   if (content.type) {
     cb_content <- data.frame(

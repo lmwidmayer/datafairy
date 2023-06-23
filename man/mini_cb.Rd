@@ -28,9 +28,11 @@ unit of measurement, a description and an annotation.
 }
 \examples{
 # example code
-df <- data.frame(id = 1:4,
-                 condition = factor(LETTERS[1:4]),
-                 score = c(2.1, 4.0, NA, 3.3))
+df <- data.frame(
+  id = 1:4,
+  condition = factor(LETTERS[1:4]),
+  score = c(2.1, 4.0, NA, 3.3)
+)
 cb <- mini_cb(df, auto.type = TRUE, content.type = TRUE)
 cb
 # write(jsonlite::toJSON(cb, pretty = TRUE), "cb_path.json")
