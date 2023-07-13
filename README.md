@@ -67,10 +67,11 @@ which you can describe to which data set this codebook belongs.
 
 ``` r
 citation("datafairy")
+#> Um Paket 'datafairy' in Publikationen zu zitieren, nutzen Sie bitte:
 #> 
-#> Widmayer L (2023). _datafairy: A tiny data handling assistant_. R
-#> package version 0.0.0.9001, <URL:
-#> https://github.com/lmwidmayer/datafairy>.
+#>   Widmayer L (2023). _datafairy: A tiny data handling assistant_. R
+#>   package version 0.0.0.9003,
+#>   <https://github.com/lmwidmayer/datafairy>.
 #> 
 #> Ein BibTeX-Eintrag für LaTeX-Benutzer ist
 #> 
@@ -79,6 +80,6 @@ citation("datafairy")
 #>     author = {Lisa Widmayer},
 #>     year = {2023},
 #>     url = {https://github.com/lmwidmayer/datafairy},
-#>     note = {R package version 0.0.0.9001},
+#>     note = {R package version 0.0.0.9003},
 #>   }
 ```

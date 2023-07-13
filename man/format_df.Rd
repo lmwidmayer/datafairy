@@ -13,7 +13,7 @@ format_df(df, digits = 2, tryInt = TRUE, align_right = FALSE)
 
 \item{tryInt}{check if numeric data are integer like and do not round if so}
 
-\item{align_right}{total number of characters to be used for numeric data, use this for nice alignment, NOT IMPLEMENTED}
+\item{align_right}{total number of characters to be used for numeric data, use this for nice alignment}
 }
 \value{
 Formatted data.frame.

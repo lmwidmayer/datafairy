@@ -61,6 +61,7 @@ Write the codebook `cb` to a tabular file format or `json` and populate it with 
 
 Note that `content.type = TRUE` adds a row with the name `CONTENT` in which you can describe to which data set this codebook belongs.  
 
+
 <!-- devtools::build_readme() -->
 
 ## Citation

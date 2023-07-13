@@ -6,7 +6,7 @@
 #' @param df data.frame
 #' @param digits to how many decimals should numeric data be rounded?
 #' @param tryInt check if numeric data are integer like and do not round if so
-#' @param align_right total number of characters to be used for numeric data, use this for nice alignment, NOT IMPLEMENTED
+#' @param align_right total number of characters to be used for numeric data, use this for nice alignment
 #'
 #' @importFrom stats na.omit
 #'
@@ -14,7 +14,12 @@
 #'
 #' @export
 format_df <- function(df, digits = 2, tryInt = TRUE, align_right = FALSE) {
-  str_expr <- paste0("%.", digits, "f")
+  if (align_right) {
+    str_expr <- paste0("%", align_right, ".", digits, "f")
+  } else {
+    str_expr <- paste0("%.", digits, "f")
+  }
+
   df <- lapply(df, function(vec) {
     if (is.numeric(vec)) {
       if (tryInt && (is.integer(vec) || all(stats::na.omit(vec %% 1 == 0)))) {

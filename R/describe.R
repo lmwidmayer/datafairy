@@ -30,13 +30,15 @@ describe.numeric <- function(vec, na.rm = FALSE) {
     max(vec, na.rm = na.rm),
     mean(vec, na.rm = na.rm),
     stats::sd(vec, na.rm = na.rm),
+    stats::sd(vec, na.rm = na.rm) / sqrt(sum(is.na(vec))),
     length(vec),
     sum(is.na(vec))
   )
   res <- data.frame(
     "Metric" = c(
       "Min", "Median", "Max",
-      "Mean", "SD",
+      "Mean",
+      "SD", "SE",
       "N", "NA"
     ),
     "Value" = res

@@ -12,6 +12,7 @@ test_that("describe() works", {
                 max(vec_num, na.rm = na_rm),
                 mean(vec_num, na.rm = na_rm),
                 stats::sd(vec_num, na.rm = na_rm),
+                stats::sd(vec_num, na.rm = na_rm) / sqrt(sum(is.na(vec_num))),
                 length(vec_num),
                 sum(is.na(vec_num)))
   res <- datafairy::describe(vec_num, na.rm = na_rm)
@@ -24,6 +25,7 @@ test_that("describe() works", {
                 max(vec_num, na.rm = na_rm),
                 mean(vec_num, na.rm = na_rm),
                 stats::sd(vec_num, na.rm = na_rm),
+                stats::sd(vec_num, na.rm = na_rm) / sqrt(sum(is.na(vec_num))),
                 length(vec_num),
                 sum(is.na(vec_num)))
   res <- datafairy::describe(vec_num, na.rm = na_rm)
