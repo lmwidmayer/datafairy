@@ -30,7 +30,7 @@ describe.numeric <- function(vec, na.rm = FALSE) {
     max(vec, na.rm = na.rm),
     mean(vec, na.rm = na.rm),
     stats::sd(vec, na.rm = na.rm),
-    stats::sd(vec, na.rm = na.rm) / sqrt(sum(is.na(vec))),
+    stats::sd(vec, na.rm = na.rm) / sqrt(sum(!is.na(vec))),
     length(vec),
     sum(is.na(vec))
   )
